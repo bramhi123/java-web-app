@@ -5,7 +5,7 @@ pipeline {
     jdk   'JDK-11'
   }  
   options {
-    buildDiscarder(logRotator(numToKeepStr: '5'))
+    buildDiscarder(logRotator(numToKeepStr: '2'))
   }
   stages {
     stage('Scan') {
